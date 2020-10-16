@@ -8,8 +8,8 @@
 #
 
 [dell dw5821e]
-23873=onomondo
-12345=bttest
++ 23873=onomondo
+- 12345=bttest
 
 # AT&T
 302220=ATT

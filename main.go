@@ -127,7 +127,11 @@ func getNewMappings(fileName string) ([]string, error) {
 	var mappings []string
 
 	for scanner.Scan() {
-		mappings = append(mappings, scanner.Text())
+		s := scanner.Text()
+		sp := strings.Split(s, " ")
+		fmt.Println(sp)
+
+		mappings = append(mappings, s)
 	}
 
 	return mappings, nil
